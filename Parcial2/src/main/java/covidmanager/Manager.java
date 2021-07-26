@@ -5,11 +5,7 @@ import usuario.Listener;
 import java.util.*;
 
 public class Manager {
-    List<Listener> listeners = new LinkedList<>();;
-
-    public Manager() {
-
-    }
+    List<Listener> listeners = new LinkedList<>();
 
     public void subscribe(Listener listener) {
         listeners.add(listener);

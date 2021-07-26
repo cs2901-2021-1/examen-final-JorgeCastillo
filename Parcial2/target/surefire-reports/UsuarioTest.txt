@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: UsuarioTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.832 s - in UsuarioTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.366 s <<< FAILURE! - in UsuarioTest
+test2(UsuarioTest)  Time elapsed: 0.05 s  <<< FAILURE!
+java.lang.IncompatibleClassChangeError: Expected non-static field covidmanager.CovidManager.manager
+	at UsuarioTest.test2(UsuarioTest.java:29)
+

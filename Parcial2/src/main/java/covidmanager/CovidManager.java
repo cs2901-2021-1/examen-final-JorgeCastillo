@@ -5,14 +5,12 @@ import usuario.Usuario;
 import java.util.logging.Logger;
 
 public class CovidManager {
-    public Manager manager;
+    public static final Manager manager = new Manager();
     boolean login = false;
 
     static final Logger logger = Logger.getLogger(CovidManager.class.getName());
 
-    public CovidManager() {
-        manager = new Manager();
-    }
+    public CovidManager() {}
 
     public void login(Usuario usuario) {
         var rev = new StringBuilder(usuario.getUsername());
