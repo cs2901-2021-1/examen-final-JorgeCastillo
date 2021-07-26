@@ -5,13 +5,13 @@ import usuario.Usuario;
 import java.util.logging.Logger;
 
 public class CovidManager {
-    public Manager manager;
+<span class="fc" id="L8">    public static final Manager manager = new Manager();</span>
 <span class="fc" id="L9">    boolean login = false;</span>
 
 <span class="fc" id="L11">    static final Logger logger = Logger.getLogger(CovidManager.class.getName());</span>
 
 <span class="fc" id="L13">    public CovidManager() {</span>
-<span class="fc" id="L14">        manager = new Manager();</span>
+        /* Manager is initilized */
 <span class="fc" id="L15">    }</span>
 
     public void login(Usuario usuario) {

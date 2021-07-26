@@ -27,7 +27,6 @@ public class UsuarioTest {
         cm.login(u1);
         u1.centerAlta(c1);
         cm.manager.notifyusers();
-        Assert.assertEquals(1, 1);
-        //Assert.assertEquals();
+        Assert.assertEquals(c1.getActualparcial(), 0);
     }
 }

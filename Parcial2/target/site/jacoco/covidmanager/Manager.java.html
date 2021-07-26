@@ -4,26 +4,22 @@ import usuario.Listener;
 
 import java.util.*;
 
-public class Manager {
-<span class="fc" id="L8">    List&lt;Listener&gt; listeners = new LinkedList&lt;&gt;();;</span>
-
-<span class="fc" id="L10">    public Manager() {</span>
-
-<span class="fc" id="L12">    }</span>
+<span class="fc" id="L7">public class Manager {</span>
+<span class="fc" id="L8">    List&lt;Listener&gt; listeners = new LinkedList&lt;&gt;();</span>
 
     public void subscribe(Listener listener) {
-<span class="nc" id="L15">        listeners.add(listener);</span>
-<span class="nc" id="L16">    }</span>
+<span class="nc" id="L11">        listeners.add(listener);</span>
+<span class="nc" id="L12">    }</span>
 
     public void unsubscribe(Listener listener) {
-<span class="nc" id="L19">        listeners.remove(listener);</span>
-<span class="nc" id="L20">    }</span>
+<span class="nc" id="L15">        listeners.remove(listener);</span>
+<span class="nc" id="L16">    }</span>
 
     public void notifyusers() {
-<span class="pc bpc" id="L23" title="1 of 2 branches missed.">        for (int i=0; i&lt;listeners.size(); i++) {</span>
-<span class="nc" id="L24">            var listener = listeners.get(i);</span>
-<span class="nc" id="L25">            listener.update();</span>
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">        for (int i=0; i&lt;listeners.size(); i++) {</span>
+<span class="nc" id="L20">            var listener = listeners.get(i);</span>
+<span class="nc" id="L21">            listener.update();</span>
         }
-<span class="fc" id="L27">    }</span>
+<span class="fc" id="L23">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -64,7 +64,7 @@ public class Usuario implements Listener {
 
     @Override
     public void update() {
-<span class="nc" id="L67">        System.out.println(&quot;Ciudadano &quot; + name + &quot;:&quot;);</span>
+<span class="nc" id="L67">        logger.info(&quot;Ciudadano &quot; + name + &quot;:&quot;);</span>
 <span class="nc bnc" id="L68" title="All 2 branches missed.">        for (int i=0; i&lt;centers.size(); i++) {</span>
 <span class="nc" id="L69">            var center = centers.get(i);</span>
 <span class="nc" id="L70">            logger.info(center.getName() + &quot;\n&quot; +</span>

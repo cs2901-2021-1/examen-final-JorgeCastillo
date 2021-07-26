@@ -10,7 +10,9 @@ public class CovidManager {
 
     static final Logger logger = Logger.getLogger(CovidManager.class.getName());
 
-    public CovidManager() {}
+    public CovidManager() {
+        /* Manager is initilized */
+    }
 
     public void login(Usuario usuario) {
         var rev = new StringBuilder(usuario.getUsername());

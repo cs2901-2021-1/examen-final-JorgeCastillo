@@ -4,6 +4,7 @@ import center.Center;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Usuario implements Listener {
@@ -64,7 +65,7 @@ public class Usuario implements Listener {
 
     @Override
     public void update() {
-        System.out.println("Ciudadano " + name + ":");
+        logger.log(Level.INFO,"Ciudadano {0} \n:" , name);
         for (int i=0; i<centers.size(); i++) {
             var center = centers.get(i);
             logger.info(center.getName() + "\n" +
