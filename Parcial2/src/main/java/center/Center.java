@@ -1,3 +1,5 @@
+package center;
+
 public class Center {
     private String name;
     private int total;

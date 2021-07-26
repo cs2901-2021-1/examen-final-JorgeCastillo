@@ -1,7 +1,11 @@
+package covidmanager;
+
+import usuario.Usuario;
+
 import java.util.logging.Logger;
 
 public class CovidManager {
-    Manager manager;
+    public Manager manager;
     boolean login = false;
 
     static final Logger logger = Logger.getLogger(CovidManager.class.getName());

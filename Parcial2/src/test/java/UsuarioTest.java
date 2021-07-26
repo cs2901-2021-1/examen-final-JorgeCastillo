@@ -1,7 +1,8 @@
+import center.Center;
+import covidmanager.CovidManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
+import usuario.Usuario;
 
 public class UsuarioTest {
     @Test

@@ -1,3 +1,7 @@
+package covidmanager;
+
+import usuario.Listener;
+
 import java.util.*;
 
 public class Manager {

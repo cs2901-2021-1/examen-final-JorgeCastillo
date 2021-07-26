@@ -1,3 +1,7 @@
+package usuario;
+
+import center.Center;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Logger;
