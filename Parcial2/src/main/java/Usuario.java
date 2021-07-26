@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class Usuario implements Listener {
     private String name;
@@ -7,6 +8,8 @@ public class Usuario implements Listener {
     private String password;
     private int edad;
     private List<Center> centers = new LinkedList<>();
+
+    static final Logger logger = Logger.getLogger(Usuario.class.getName());
 
     public Usuario(String name, String username, String password, int edad) {
         this.name = name;
@@ -60,7 +63,7 @@ public class Usuario implements Listener {
         System.out.println("Ciudadano " + name + ":");
         for (int i=0; i<centers.size(); i++) {
             var center = centers.get(i);
-            System.out.println(center.getName() + "\n" +
+            logger.info(center.getName() + "\n" +
                     "\tha vacuado a " + center.getActualparcial() + " de " + center.getTotal() + "\n" +
                     "\tvacunados parciales:" + center.getPercentageParcial() + "\n" +
                     "\tvacunados totales" + center.getPercentageTotal() + "\n");
